@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Batalla Pokémon</title>
+    <script src="combate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="../000/estilos/combate.css">
+</head>
+
+<body>
+    <header>
+        <img src="../000/charizard.gif" alt="Charizard en batalla">
+        <a href="../index.html">
+            <h1>Simulador de Batalla Pokémon</h1>
+        </a>
+    </header>
+    <main id="batalla1">
+        <section id="pokemon-selection">
+            <h2>Batalla 1v1</h2>
+            <button id="select-player-pokemon">Elige tu Pokémon</button>
+
+            <button id="select-enemy-pokemon">Seleccionar Pokémon Enemigo</button>
+            <button id="reset-selection">Reiniciar Selección</button>
+        </section>
+
+        <section class="battle-container">
+            <article id="player-pokemon" class="pokemon">
+                <h2>Pokémon Jugador</h2>
+                <img id="player-image" style="display: none" ;>
+                <div id="player-hp" class="hp-bar-container">
+                    <div class="hp-bar" style="width: 100%;"></div>
+                </div>
+                <p id="player-name">Pokémon no seleccionado</p>
+            </article>
+
+            <article id="enemy-pokemon" class="pokemon">
+                <h2>Pokémon Enemigo</h2>
+                <img id="enemy-image" style="display: none;">
+                <div id="enemy-hp" class="hp-bar-container">
+                    <div class="hp-bar" style="width: 100%;"></div>
+                </div>
+                <p id="enemy-name">Pokémon no seleccionado</p>
+            </article>
+        </section>
+
+        <button id="start-battle">Iniciar Batalla</button>
+
+        <section class="logs" id="battle-log">
+            <h3>Registro de la Batalla</h3>
+        </section>
+    </main>
+
+      
+</body>
+
+</html>

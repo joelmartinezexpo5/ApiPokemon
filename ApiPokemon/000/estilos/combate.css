@@ -1,0 +1,190 @@
+
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 20px;
+    background:url("../fondoBatalla.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Cabecera*/
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #ff0000, #0000ff);
+    padding: 10px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3rem;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#header-title:hover {
+    color: #ffeb3b;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+img{
+    width: 20%;
+    max-width: 340px;
+    transition: color 0.3s ease;
+}
+
+
+#header-title:hover {
+    color: #ffeb3b;
+}
+.battle-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.pokemon {
+    text-align: center;
+}
+
+.logs {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.hp-bar {
+    height: 20px;
+    background: #4caf50; /* Barra de HP en verde */
+    transition: width 0.3s;
+}
+
+.hp-bar-container {
+    width: 100%;
+    background: #ccc;
+    border: 1px solid #aaa;
+}
+
+.pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.pokemon-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Sombra más pronunciada */
+}
+
+.pokemon-card:hover {
+    transform: translateY(-8px); /* Efecto de elevación más pronunciado */
+}
+
+.pokemon-card img {
+    width: 120px;
+    height: 120px;
+}
+
+.pokemon-card.selected {
+    border: 3px solid #ff5733; /* Nueva selección de color */
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #1e90ff; /* Botones de color azul */
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para los botones */
+}
+
+button:hover {
+    background-color: #1c86ee; /* Cambio de color al pasar el mouse */
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+}
+
+button:active {
+    transform: scale(0.98); /* Efecto de presión cuando se hace clic */
+}
+.entradaLog{
+    background-color: #ff2020;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+#player-image, #enemy-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#ventanaEmergente {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#ventanaEmergente.hidden {
+    display: none;
+}
+
+.ventanaEmergente-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.lista-pokemon {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}

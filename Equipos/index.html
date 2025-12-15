@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Equipos Pokémon</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img  src="./images/charizard.gif">
+    <a href="index.html"></a><h1>Equipos Pokemon</h1>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Sección para crear equipos -->
+    <section id="crear-equipo">
+      <h2>Crear Equipo</h2>
+      <input type="text" id="nombreEquipo" placeholder="Nombre del equipo" />
+      <div id="opciones">
+        <label for="filtro-generacion">Generación:</label>
+        <select id="filtro-generacion">
+          <option value="">Todas</option>
+          <option value="1">Generación 1</option>
+          <option value="2">Generación 2</option>
+          <option value="3">Generación 3</option>
+          <option value="4">Generación 4</option>
+          <option value="5">Generación 5</option>
+          <option value="6">Generación 6</option>
+          <option value="7">Generación 7</option>
+          <option value="8">Generación 8</option>
+        </select>
+        <button id="generarAleatorio">Generar Equipo Aleatorio</button>
+        <button id="limpiarEquipo">Limpiar Equipo</button>
+        <button id="guardarEquipo">Guardar Equipo</button>
+      </div>
+      <div class="cuadros">
+        <!-- 6 cuadros para los Pokémon del equipo -->
+        <div class="cuadro" data-index="0">Seleccionar</div>
+        <div class="cuadro" data-index="1">Seleccionar</div>
+        <div class="cuadro" data-index="2">Seleccionar</div>
+        <div class="cuadro" data-index="3">Seleccionar</div>
+        <div class="cuadro" data-index="4">Seleccionar</div>
+        <div class="cuadro" data-index="5">Seleccionar</div>
+      </div>
+    </section>
+
+    <!-- ventanaEmergente para seleccionar Pokémon -->
+    <div id="ventanaEmergente" class="hidden">
+      <div class="ventanaEmergente-content">
+        <h3>Selecciona un Pokémon</h3>
+        <div id="listaPokemon" class="lista-pokemon"></div>
+        <div id="paginador">
+          <button id="anterior" disabled>Anterior</button>
+          <button id="siguiente">Siguiente</button>
+        </div>
+        <button id="cerrarVentanaEmergente">Cerrar</button>
+      </div>
+    </div>
+
+    <!-- Sección de equipos creados -->
+    <section id="equipos-creados">
+      <h2>Equipos Creados</h2>
+      <ul id="listaEquipos"></ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Desarrollado por - Basado en PokéAPI</p>
+  </footer>
+
+  <script type="module" src="./scripts/app.js"></script>
+</body>
+</html>

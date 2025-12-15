@@ -1,0 +1,132 @@
+body {
+    background-color: #2d2d2d;
+    color: #f0f0f0;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin: 0;
+}
+header{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    justify-content: center;
+    display: flex;
+    background: linear-gradient(90deg, #ff0000, #0000ff); /* Gradiente de colores */
+}
+header h1{
+    font-size: 3rem; 
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    margin: 20px 0; /* Espaciado */    
+    text-align: center; /* Centrado */
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra de texto para darle profundidad */
+    font-weight: bold;
+    
+}
+header a {
+
+    text-decoration: none;
+}
+img{
+    width: 20%;
+    max-width: 140px;
+  transition: color 0.3s ease;
+}
+
+
+#header-title:hover {
+    color: #ffeb3b;
+}
+#pokemon-details {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #cc0000; /* Rojo Pokédex */
+    border: 5px solid #333; /* Contraste negro */
+    border-radius: 15px; /* Bordes suaves */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para dar volumen */
+    font-family: 'Press Start 2P', sans-serif; /* Tipografía retro */
+    color: white;
+    text-align: center;
+}
+
+#pokemon-details img {
+    width: 150px; /* Tamaño más compacto */
+    height: auto;
+    margin: 10px 0;
+    border: 3px solid #fff;
+    border-radius: 5px; /* Detalles suaves */
+    background-color: #2d2d2d;
+}
+
+.pokemon-types-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.pokemon-type {
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    background-color: #000; /* Fondo negro retro */
+    color: #fff;
+    border: 2px solid #fff; /* Marco blanco */
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+h2 {
+    color: #ffff00; /* Amarillo brillante */
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px #000; /* Toque retro */
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Alinear a la izquierda como en los textos clásicos */
+}
+
+li {
+    background-color: #990000; /* Rojo oscuro */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #fff; /* Bordes blancos */
+    color: white;
+    font-size: 0.9em;
+    text-shadow: 1px 1px 1px #000; /* Toque retro */
+}
+.pokemon-sprites img {
+    width: 100px;
+    height: auto;
+    margin: 5px;
+}
+
+.damage-table {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.damage-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.damage-row.header {
+    background-color: #ffcc00;
+    color: #000;
+    font-weight: bold;
+}
+
+.damage-cell {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+}

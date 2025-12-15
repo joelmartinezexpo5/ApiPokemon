@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="../000/estilos/pokedex.css">
+</head>
+<body>
+    
+    <header>
+        <img  src="../000/charizard.gif">
+        <a href="../index.html"><h1>Pokedex</h1></a>
+        </header>
+    
+    
+    <div id="filters">
+        <input type="text" id="pokemon-search" placeholder="Buscar Pokémon..." />
+        <select id="generation-filter">
+            <option value="">Todas las generaciones</option>
+            <option value="1">Generación I</option>
+            <option value="2">Generación II</option>
+            <option value="3">Generación III</option>
+            <option value="4">Generación IV</option>
+            <option value="5">Generación V</option>
+            <option value="6">Generación VI</option>
+            <option value="7">Generación VII</option>
+            <option value="8">Generación VIII</option>
+        </select>
+    </div>
+
+    <div id="pokemon-gallery"></div>
+
+    <div id="pagination">
+        <button id="prev-page">Anterior</button>
+        <button id="next-page">Siguiente</button>
+    </div>
+
+    <script src="pokedex.js" type="module"></script>
+</body>
+</html>

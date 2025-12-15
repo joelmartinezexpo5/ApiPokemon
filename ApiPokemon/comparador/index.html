@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../000/estilos/comparador.css">
+    <title>Comparador de Pokémon</title>
+    <script src="funcionesComparador.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../000/charizard.gif">
+        <a href="/index.html"><h1 id="header-title">Comparador</h1></a>
+        
+    </header>
+    <main>
+        <section class="pokemon1">
+
+            <div id="imagenPokemon1"></div>
+            <button id="quitarPokemon1">Quitar Pokémon Izquierda</button>
+            <div id="pokemon-list-container-pokemon1" class="pokemon-list-container"></div>
+        </section>
+        <section class="estadisticas">
+            <h1>COMPARATIVA ESTADISTICAS</h1>
+            <div class="estadisticas">
+                <div class="table">
+                    <div class="fila">
+                        <div>HP</div>
+                    </div>
+                    <div class="fila" id="hpPokemons"></div>
+                    <div class="fila">
+                        <div>Ataque</div>
+                    </div>
+                    <div class="fila" id="atPokemons"></div>
+                    <div class="fila">
+                        <div>Defensa</div>
+                    </div>
+                    <div class="fila" id="dfPokemons"></div>
+                    <div class="fila">
+                        <div>Velocidad</div>
+                    </div>
+                    <div class="fila" id="vlPokemons"></div>
+                    <div class="fila">
+                        <div>Ataque Especial</div>
+                    </div>
+                    <div class="fila" id="atEPokemons"></div>
+                    <div class="fila">
+                        <div>Defensa Especial</div>
+                    </div>
+                    <div class="fila" id="dfEPokemons"></div>
+                </div>
+            </div>
+        </section>
+        <section class="pokemon2">
+
+            <div id="imagenPokemon2"></div>
+            <button id="quitarPokemon2">Quitar Pokémon Derecha</button>
+            <div id="pokemon-list-container-pokemon2" class="pokemon-list-container"></div>
+        </section>
+    </main>
+</body>
+
+</html>

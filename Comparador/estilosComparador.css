@@ -1,0 +1,262 @@
+/* General */
+body {
+    background-image: url('1200px-Estadio_Pokémon_2_SSBU.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #f0f0f0;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #ff0000, #0000ff);
+    padding: 10px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3rem;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#header-title:hover {
+    color: #ffeb3b;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+button#volverMain {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff0000;
+    color: white;
+    padding: 5px 10px; /* Reduce el tamaño del botón */
+    font-size: 0.8rem; /* Reduce el tamaño del texto */
+    border-radius: 5px; /* Reduce el radio del borde */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button#volverMain:hover {
+    background-color: #ff4d4d;
+}
+
+button#volverMain:active {
+    background-color: #ff0000;
+}
+
+/* Main */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    /* Mantiene las secciones en una fila */
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    /* Anchura máxima para un diseño centrado */
+    margin: 0 auto;
+    /* Centra el contenido horizontalmente */
+}
+
+/* Sections */
+section {
+    background-color: #3333;
+    border: 2px solid #ffcc00;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.301);
+    flex: 1;
+    /* Todas las secciones ocupan el mismo espacio */
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra el contenido dentro de cada sección */
+    gap: 15px;
+    min-height: 775px; /* Establece una altura mínima */
+    max-height: 775px; /* Establece una altura máxima */
+    overflow: hidden; /* Oculta el contenido desbordado */
+}
+
+.estadisticas,
+.pokemon1,
+.pokemon2 {
+    background-color: #333333c5;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+section h1 {
+    font-size: 1.8rem;
+    color: #ffcc00;
+    margin: 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+section img {
+    width: 90%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Estadísticas */
+.estadisticas .table {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.estadisticas .fila {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #555;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.estadisticas .fila:hover {
+    background-color: #666;
+}
+
+.estadisticas .fila div {
+    flex: 1;
+    text-align: center;
+    color: #ffcc00;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.estadisticas .fila:nth-child(odd) {
+    background-color: #666;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Nombre del Pokémon */
+.pokemon-name {
+    background: linear-gradient(90deg, #ff0000, #0000ff);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cuadro {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pokemon-list-container {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 1px solid #ccc;
+    max-height: 400px;
+    /* Ajustar según sea necesario */
+    overflow-y: auto;
+    /* Añadir scroll si el contenido es demasiado grande */
+}
+
+.pokemon-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    /* Cambiar el cursor al pasar sobre el elemento */
+}
+
+.pokemon-item img {
+    margin-right: 10px;
+}
+
+/* Efecto hover */
+.pokemon-item:hover {
+    background-color: #f0f0f0;
+    color: black;
+    /* Cambiar el fondo al pasar el ratón */
+}
+
+/* Efecto al hacer clic */
+.pokemon-item:active {
+    background-color: #ddd;
+    /* Cambiar el fondo al hacer clic */
+}
+
+/* Botones */
+button {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #ffeb3b;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #ffcc00;
+    transform: scale(0.95);
+}
